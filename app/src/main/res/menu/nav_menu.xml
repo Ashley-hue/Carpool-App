@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_car_detas"
+            android:icon="@drawable/car_details"
+            android:title="Car Details"/>
+        <item
+            android:id="@+id/nav_car_list"
+            android:icon="@drawable/cars_list"
+            android:title="Car List"/>
+        <item
+            android:id="@+id/nav_journ"
+            android:icon="@drawable/plan_journ"
+            android:title="Plan Journey"/>
+        <item
+            android:id="@+id/nav_journ_list"
+            android:icon="@drawable/journey_list"
+            android:title="Journey List"/>
+        <item
+            android:id="@+id/nav_upd"
+            android:icon="@drawable/view_prof"
+            android:title="View Profile"/>
+        <item
+            android:id="@+id/nav_view_prof"
+            android:icon="@drawable/delete"
+            android:title="Delete Account"/>
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

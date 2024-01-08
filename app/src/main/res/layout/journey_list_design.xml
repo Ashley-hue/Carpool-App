@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    android:elevation="4dp"
+    app:cardBackgroundColor="#2F000000">
+
+    <RelativeLayout
+        android:id="@+id/journrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/regisTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="From: "
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USIU"
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="16sp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/vehicleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To: "
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textStyle="bold"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/origin"/>
+
+        <TextView
+            android:id="@+id/destt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kileleshwa"
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="16sp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/origin"/>
+
+        <TextView
+            android:id="@+id/modelTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textStyle="bold"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/destt"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/timmy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:30"
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/destt"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

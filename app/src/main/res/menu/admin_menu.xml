@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/admin_home"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/admin_cars"
+            android:icon="@drawable/car_details"
+            android:title="Car Owners"/>
+        <item
+            android:id="@+id/admin_pass"
+            android:icon="@drawable/passenging"
+            android:title="Passengers"/>
+        <item
+            android:id="@+id/admin_pay"
+            android:icon="@drawable/payup"
+            android:title="Payments"/>
+
+        <item
+            android:id="@+id/admin_report"
+            android:icon="@drawable/reporting"
+            android:title="Reports"/>
+
+        <item
+            android:id="@+id/admin_view"
+            android:icon="@drawable/view_prof"
+            android:title="View Profile"/>
+        <item
+            android:id="@+id/admin_del"
+            android:icon="@drawable/delete"
+            android:title="Delete Account"/>
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/adm_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

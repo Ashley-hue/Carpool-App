@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CarDeatsFragment"
+    android:background="@drawable/deatsbg">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9F000000"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="150dp">
+
+            <ImageView
+                android:id="@+id/carOwnerprof"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/deatsprof"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/regno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="20dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/edit_bg"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:hint="Registration number"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/carname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="100dp"
+            android:paddingStart="20dp"
+            android:background="@drawable/edit_bg1"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Vehicle name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carname"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="100dp"
+            android:paddingStart="20dp"
+            android:inputType="number"
+            android:background="@drawable/edit_bg"
+            android:ems="10"
+            android:minHeight="48dp"
+            android:hint="Model year"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btndetails"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_below="@+id/date"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="143dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginEnd="134dp"
+            android:layout_marginBottom="98dp"
+            android:background="@drawable/btn_bg"
+            android:text="ADD" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

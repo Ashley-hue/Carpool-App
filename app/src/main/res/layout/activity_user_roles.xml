@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:contentDescription="@string/scroll_items"
+    android:background="@drawable/userrbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5F000000">
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:text="From:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/cities"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/edit_bg1"
+            android:drawableLeft="@drawable/building"
+            android:drawablePadding="10dp"
+            android:layout_toEndOf="@+id/from"
+            android:hint="city"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/from"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:padding="5dp"
+            android:text="To:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/dests"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cities"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="92dp"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/buildin"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_toEndOf="@+id/to"
+            android:hint="place"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/to"
+            android:padding="5dp"
+            android:text="Date:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/datez"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/dests"
+            android:layout_toEndOf="@+id/dates"
+            android:hint="Date"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_bg1"
+            android:drawableLeft="@drawable/datey"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/dates"
+            android:padding="5dp"
+            android:text="Time:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/timz"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/datez"
+            android:layout_toEndOf="@+id/times"
+            android:hint="Time"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/timery"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/chooseCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/timz"
+            android:padding="5dp"
+            android:text="Car:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/carz"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timz"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:hint="Car"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/chooseCar"
+            android:background="@drawable/edit_bg1"
+            android:minHeight="48dp"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/chooseCar"
+            android:padding="5dp"
+            android:text="Rate/km:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/rates"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/carz"
+            android:layout_toEndOf="@+id/rate"
+            android:hint="Rate"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:background="@drawable/edit_bg"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/seats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/rate"
+            android:padding="5dp"
+            android:text="No. of seats:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/noseats"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/rates"
+            android:layout_toEndOf="@+id/seats"
+            android:hint="No. of seats"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:background="@drawable/edit_bg1"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/bookedpeeps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/noseats"
+            android:padding="5dp"
+            android:text="Booked by: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <ListView
+            android:id="@+id/listvview"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/noseats"
+            android:layout_toEndOf="@+id/bookedpeeps"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="26dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>

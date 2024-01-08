@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanJourneyFragment"
+    android:background="@drawable/hehe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5F000000">
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:text="From:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/edit_bg1"
+            android:drawableLeft="@drawable/building"
+            android:drawablePadding="10dp"
+            android:layout_toEndOf="@+id/from"
+            android:hint="e.g. USIU"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/from"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:padding="5dp"
+            android:text="To:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/dest"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="92dp"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/buildin"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_toEndOf="@+id/to"
+            android:hint="e.g. Kileleshwa"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/to"
+            android:padding="5dp"
+            android:text="Date:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/when"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/dest"
+            android:layout_toEndOf="@+id/dates"
+            android:hint="Date"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_bg1"
+            android:drawableLeft="@drawable/datey"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:inputType="none"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/dates"
+            android:padding="5dp"
+            android:text="Time:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/whens"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/when"
+            android:layout_toEndOf="@+id/times"
+            android:inputType="none"
+            android:hint="Time"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/timery"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/chooseCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/whens"
+            android:padding="5dp"
+            android:text="Select Car:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <Spinner
+            android:id="@+id/carSelect"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/whens"
+            android:layout_toEndOf="@+id/chooseCar"
+            android:contentDescription="choose car"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_bg1"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/chooseCar"
+            android:padding="5dp"
+            android:text="Rate/km:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <Spinner
+            android:id="@+id/ratepkm"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/carSelect"
+            android:layout_toEndOf="@+id/rate"
+            android:hint="rate"
+            android:contentDescription="rate per km"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:background="@drawable/edit_bg"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/seats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/rate"
+            android:padding="5dp"
+            android:text="No. of seats:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <Spinner
+            android:id="@+id/seatsNo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/ratepkm"
+            android:layout_toEndOf="@+id/seats"
+            android:hint="No. of seats"
+            android:contentDescription="number of seats"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:background="@drawable/edit_bg1"
+            android:paddingStart="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@drawable/btn_bg"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/seatsNo"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

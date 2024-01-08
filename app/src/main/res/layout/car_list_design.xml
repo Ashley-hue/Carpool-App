@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    android:elevation="4dp"
+    app:cardBackgroundColor="#4F000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/carImage"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/traveler"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/regisTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Reg No: "
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/regisNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KAG789P"
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="16sp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/vehicleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car Name: "
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textStyle="bold"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/vehicleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suzuki "
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="16sp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/modelTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model year: "
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textStyle="bold"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:id="@+id/modelyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1999 "
+            android:textColor="@color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="80dp"/>
+
+        <ImageView
+            android:id="@+id/delete_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="310dp"
+            android:src="@drawable/delete"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

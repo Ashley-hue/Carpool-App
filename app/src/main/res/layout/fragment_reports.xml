@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportsFragment"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:contentDescription="scrollviewting"
+    android:background="@drawable/reportsnew">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2FFFFFFF">
+
+        <TableLayout
+            android:id="@+id/tables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:padding="10dp"
+            android:layout_margin="5dp">
+
+            <TableRow
+                android:background="#C04CFD">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Driver"
+                    android:textColor="@color/white"
+                    android:paddingStart="30dp"
+                    android:textSize="15sp"
+                    android:layout_weight="4"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Passenger"
+                    android:textColor="@color/white"
+                    android:paddingStart="30dp"
+                    android:textSize="15sp"
+                    android:layout_weight="4"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textColor="@color/white"
+                    android:paddingStart="50dp"
+                    android:textSize="15sp"
+                    android:layout_weight="4"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/downloadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Table"
+            android:background="@drawable/btn_bg"
+            android:padding="10dp"
+            android:layout_below="@id/tables"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="40dp"/>
+    </RelativeLayout>
+
+</ScrollView>

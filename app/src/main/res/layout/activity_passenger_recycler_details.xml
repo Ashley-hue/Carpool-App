@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:contentDescription="@string/scroll_items"
+    android:background="@drawable/prd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F000000">
+
+        <TextView
+            android:id="@+id/ownscars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            android:text="Driver:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/drivername"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/edit_bg1"
+            android:drawableLeft="@drawable/emprof"
+            android:drawablePadding="10dp"
+            android:layout_toEndOf="@+id/from"
+            android:hint="Driver"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/driverphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/ownscars"
+            android:padding="5dp"
+            android:text="Driver's No:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/phonies"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drivername"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="92dp"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/calll"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_toEndOf="@+id/passto"
+            android:hint="Phone No."
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/driverphone"
+            android:padding="5dp"
+            android:text="From:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/passcity"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/phonies"
+            android:background="@drawable/edit_bg1"
+            android:drawableLeft="@drawable/building"
+            android:drawablePadding="10dp"
+            android:layout_toEndOf="@+id/from"
+            android:hint="city"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/passto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/from"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:padding="5dp"
+            android:text="To:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/passdests"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passcity"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="92dp"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/buildin"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_toEndOf="@+id/passto"
+            android:hint="place"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/passto"
+            android:padding="5dp"
+            android:text="Date:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/passdatez"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/passdests"
+            android:layout_toEndOf="@+id/dates"
+            android:hint="Date"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_bg1"
+            android:drawableLeft="@drawable/datey"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/dates"
+            android:padding="5dp"
+            android:text="Time:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/passtimz"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/passdatez"
+            android:layout_toEndOf="@+id/times"
+            android:hint="Time"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/timery"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/passchooseCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/times"
+            android:padding="5dp"
+            android:text="Car:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/passcarz"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passtimz"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:hint="Car"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/passchooseCar"
+            android:background="@drawable/edit_bg1"
+            android:minHeight="48dp"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/passchooseCar"
+            android:padding="5dp"
+            android:text="Rate/km:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/passrates"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/passcarz"
+            android:layout_toEndOf="@+id/rate"
+            android:hint="Rate"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:background="@drawable/edit_bg"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/passseats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/rate"
+            android:padding="5dp"
+            android:text="No. of seats:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/passnoseats"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/passrates"
+            android:layout_toEndOf="@+id/passseats"
+            android:hint="No. of seats"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:background="@drawable/edit_bg1"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/passseats"
+            android:padding="5dp"
+            android:text="Price"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passnoseats"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="92dp"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/payup"
+            android:drawableTint="#BFD9FE"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="50dp"
+            android:layout_toEndOf="@+id/passto"
+            android:hint="Price"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dapricin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:text="Check Price"
+            android:layout_below="@+id/price"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dabookin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:text="Book Trip"
+            android:layout_below="@+id/price"
+            android:layout_toEndOf="@id/dapricin"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
